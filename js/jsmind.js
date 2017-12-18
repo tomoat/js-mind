@@ -2913,6 +2913,7 @@
 
     // export jsmind
     if (typeof module !== 'undefined' && typeof exports === 'object') {
+        $w[__name__] = jm;
         module.exports = jm;
     } else if (typeof define === 'function' && (define.amd || define.cmd)) {
         define(function() { return jm; });
